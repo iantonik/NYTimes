@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <title>New York Times Search</title>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous">
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+       crossorigin="anonymous">
+
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+   <link rel=stylesheet href="classwork.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="app.js"></script>
+
+</head>
+
+<body>
+   <!--header-->
+   <div class="container" id="mainContainer">
+       <div class="col-12">
+           <div class="fas fa-newspaper title"> New York Times
+           </div>
+       </div>
+       <br>
+       <br>
+       <!--Search parameter form-->
+
+       <div class="card">
+           <div class="far fa-newspaper card-header">
+               Search Parameters
+           </div>
+           <div class="card-body">
+               <label for="term-search">Search Term: </label>
+               <br>
+               <input type="text" class="search" id="term-search">
+               <br>
+               <label for="number-search">Number of Records to Retrieve: </label>
+               <br>
+               <select id="Choose" class="form-control se">
+                       <option>1</option>
+                       <option>10</option>
+                       <option>15</option>
+                     </select>
+               <!-- <input type="text" class="search" id="number-search"> -->
+               <br>
+               <label for="start-year-search">Start Year (Optional):</label>
+               <br>
+               <input type="text" class="search" id="start-search">
+               <br>
+               <label for="end-year-search">End Year (Optional:</label>
+               <br>
+
+               <input type="text" class="search" id="end-search">
+
+               <br>
+               <br>
+
+               <button class="fas fa-search get-info"> Search </button>
+
+               <button class="fas fa-trash-alt clear"> Clear Results </button>
+           </div>
+       </div>
+
+
+       <!--top articles-->
+   <div class="card">
+           <div class="card-header"><i class="fa fa-calendar" aria-hidden="true"></i> Top Articles </div>
+           <div class="card-body" id="articles"></div>
+       </div>
+
+
+
+   <!--footer-->
+
+       <div class="container text-center">
+           <hr class=" mt-4">
+    <footer>
+               Made with lots and lots of <i class="fas fa-kiss-wink-heart icon"></i>
+
+           </footer>
+       </div>
+   </div>
+
+</body>
+
+</html>
